@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+.team-section {
+    background: #f1f1f1;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+}
+
+.inner-width {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    color: #333333;
+}
+
+.team-section h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: 4px solid;
+    padding-bottom: 10px;
+}
+
+.pe {
+    float: left;
+    width: calc(100% / 3);
+    overflow: hidden;
+    padding: 40px 0;
+    transition: 0.4s;
+}
+
+.pe:hover {
+    background: #dddddd;
+}
+
+.pe img {
+    width: 130px;
+    height: 120px;
+}
+
+.p-name {
+    margin: 16px 0;
+    text-transform: uppercase;
+}
+
+.p-des {
+    font-style: italic;
+    color: #00b894;
+}
+
+.p-sm {
+    margin-top: 12px;
+}
+
+.p-sm a {
+    margin: 0 4px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.p-sm a i {
+    color: #333333;
+    line-height: 30px;
+}
+
+.p-sm a:hover {
+    transform: scale(1.3);
+}
+
+
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 600px) {
+    .pe{ 
+        width: 100%;
+    }
+
+    .team-section {
+        height: 100vh;
+    }
+}
